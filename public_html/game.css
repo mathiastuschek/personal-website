@@ -1,0 +1,17 @@
+*{
+    font-family: 'Arimo', sans-serif;
+}
+
+#startGameButton{
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50; /* Green */
+}
+
+#startGameButton:disabled{
+    opacity: 0;
+}
+
+#startGameButton:hover{
+    background-color: #4CAF50;
+}

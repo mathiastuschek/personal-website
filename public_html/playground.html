@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="game.css" />
+    <link rel="icon" href="rocket.png" type="image/icon type" />
+    <title>rocket game</title>
+  </head>
+  <body>
+    <canvas id="canvas" class="canvas"></canvas>
+    <script src="game.js"></script>
+    <div>
+      <button id="startGameButton" onclick="startGame()">start the Game</button>
+      <script>
+        document
+          .getElementById("startGameButton")
+          .addEventListener("click", buttonDisabler);
+
+        function buttonDisabler() {
+          document.getElementById("startGameButton").disabled = true;
+        }
+      </script>
+      <p>Change direction with SPACE</p>
+    </div>
+  </body>
+</html>
