@@ -12,8 +12,8 @@ background.src = "background.png"
 
 let canvas = document.getElementById("canvas");
 let ctx = canvas.getContext("2d");
-canvas.width  = 1280; //magic number because of slow loading of background -> background.width 2 slow, sometimes 0
-canvas.height = 720;  //magic number because of slow loading of background -> background.height 2 slow, sometimes 0
+canvas.width  = 1024; //magic number because of slow loading of background -> background.width 2 slow, sometimes 0
+canvas.height = 600;  //magic number because of slow loading of background -> background.height 2 slow, sometimes 0
 
 
 
@@ -135,7 +135,7 @@ function update(){
 
   console.log(sec);
 
-  if(rocket.y > 630){
+  if(rocket.y > 550){
     rocketMovingDown = false;
   }
   else if(rocket.y < 20){
@@ -177,7 +177,7 @@ function update(){
   }
 
   if(movingDown){
-    if(ufo.y < 610){
+    if(ufo.y < 500){
       ufo.y += 10;
     }
     else{
